@@ -34,7 +34,7 @@ public class EmployeeDao {
 
     public void insert(String name, String department) {
         // INSERT文を生成します
-        String sql = "INSERT INTO EMPLOYEES (ID, NAME, DEPARTMENT) VALUES (EMPLOYEE_ID_SEQ.nextval,?,?)";
+        String sql = "INSERT INTO EMPLOYEES (NAME, DEPARTMENT) VALUES (?,?)";
 
         // SQL文を準備します
         try(PreparedStatement stmt = con.prepareStatement(sql);) {
