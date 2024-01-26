@@ -14,7 +14,7 @@ public class Main {
             EmployeeDao employeeDao = new EmployeeDao();
 
             // CSVファイルを読み込みます
-            File f = new File("C:¥¥pleiades¥¥work¥¥java_batch_sample¥¥resources¥¥sample.csv");
+            File f = new File("~/Documents/SLStudio_Lesson/java_batch_sample/resources/sample.csv");
             BufferedReader br = new BufferedReader(new FileReader(f));
 
             // ファイル内の１行のテキストを一時保存する変数

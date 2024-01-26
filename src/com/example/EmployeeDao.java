@@ -12,12 +12,12 @@ public class EmployeeDao {
 
     public EmployeeDao() {
         // 接続先のURL
-        this.url = "jdbc:oracle:thin:@localhost:1521:xe";
+        this.url = "jdbc:postgresql://localhost:5432/MODEL_LESSON";
         // ユーザー名
         //（別のユーザー名に変更している場合はその該当ユーザー名を設定）
-        this.user = "MODEL_LESSON";
+        this.user = "postgres";
         // パスワード
-        this.pass = "oracle";
+        this.pass = "torres";
 
         try {
             // 未接続の場合のみ処理を実施します
